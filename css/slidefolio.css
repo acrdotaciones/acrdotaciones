@@ -152,20 +152,25 @@ border-radius:0px !important;
 .navbar-new .navbar-link:hover {
   color: #333333;
 }
+
 /*Navbar */
-
-
 .header {
   display: table;
   height: 100%;
   width: 100%;
   position: relative;
 }
+
+.logo-small{
+  width: 150px; height: 150px;
+}
+
 .btn-top {
 color:#f1f1f1;
 background:none repeat scroll 0 0 rgba(0, 0, 0, 0.57);
 border-color:#cccccc;
 }
+
 .btn-top:hover,
 .btn-top:focus,
 .btn-top:active,
@@ -175,8 +180,8 @@ border-color:#cccccc;
   border-color: #adadad;
 }
 
-/* about us */
 
+/* about us */
 .about_us {
   padding: 50px 0;
   background:none repeat scroll 0 0 #F1F1F1;
