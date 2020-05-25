@@ -43,3 +43,18 @@ $(document).ready(function(){
 	  });
 
 }); // end document.ready
+
+document.getElementById("send").addEventListener("click", send);
+
+function send() {
+	const form = document.querySelectorAll(".form-control");
+	const message = `Nombre: ${form[0].value}
+Correo: ${form[1].value}
+Asunto: ${form[2].value}
+Mensaje: ${form[3].value}`;
+
+	const phone = "+573022252751";
+	const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`
+
+	window.open(url, '_blank');
+}
